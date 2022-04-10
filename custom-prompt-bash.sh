@@ -22,5 +22,5 @@ function get_prompt {
 
 # are we an interactive shell?
 if [ "$PS1" ]; then
-	PS1=`get_prompt`
+	PS1=$(get_prompt)
 fi

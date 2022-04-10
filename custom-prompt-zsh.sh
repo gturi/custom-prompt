@@ -23,5 +23,5 @@ function get_prompt {
 
 # are we an interactive shell?
 if [ "$PROMPT" ]; then
-	precmd() { PROMPT=`get_prompt` }
+	precmd() { PROMPT=$(get_prompt) }
 fi
