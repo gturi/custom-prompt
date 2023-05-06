@@ -12,7 +12,7 @@ My custom command line prompt.
 ## Install
 
 ```
-git clone --recurse-submodule https://github.com/FlamingTuri/custom-prompt.git
+git clone https://github.com/gturi/custom-prompt.git
 ```
 
 Run `installer-for-bash.sh` or `installer-for-zsh.sh` script. The changes will be loaded from the next terminal session you will open.
@@ -20,8 +20,7 @@ Run `installer-for-bash.sh` or `installer-for-zsh.sh` script. The changes will b
 ## Update
 
 ```
-git pull
-git submodule update --remote
+./update.sh
 ```
 
 ## Uninstall
