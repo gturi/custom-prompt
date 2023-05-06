@@ -1,3 +1,0 @@
-[submodule "get-git-branch-name"]
-	path = get-git-branch-name
-	url = https://github.com/FlamingTuri/get-git-branch-name.git
