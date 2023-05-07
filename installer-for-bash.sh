@@ -5,7 +5,7 @@ DIR="$(dirname "$(readlink -f "$0")")"
 
 cd "$DIR" || exit
 
-git clone https://github.com/gturi/get-git-branch-name.git\
+git clone https://github.com/gturi/get-git-branch-name.git
 /bin/bash "$DIR/get-git-branch-name/installer-for-bash.sh"
 
 SCRIPT="$DIR/custom-prompt-bash.sh"
