@@ -11,15 +11,15 @@ git clone https://github.com/gturi/get-git-branch-name.git
 SCRIPT="$DIR/custom-prompt-zsh.sh"
 
 if [ -f "$SCRIPT" ]; then
-    # adds to .bashrc
-    # # setup custom prompt
-    # if [ -f "$SCRIPT" ]; then
-    #     source "$SCRIPT"
-    # fi
-    printf '\n%s\n%s\n%s\n%s\n' \
-        "# setup custom prompt" \
-        "if [ -f \"$SCRIPT\" ]; then" \
-        "  emulate sh -c '. \"$SCRIPT\"'" \
-        'fi' \
-        >> "$HOME/.zshrc"
+  # adds to .zshrc
+  # # setup custom prompt
+  # if [ -f "$SCRIPT" ]; then
+  #   . "$SCRIPT"
+  # fi
+  printf '\n%s\n%s\n%s\n%s\n' \
+    "# setup custom prompt" \
+    "if [ -f \"$SCRIPT\" ]; then" \
+    "  . \"$SCRIPT\"" \
+    'fi' \
+    >>"$HOME/.zshrc"
 fi

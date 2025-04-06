@@ -11,15 +11,15 @@ git clone https://github.com/gturi/get-git-branch-name.git
 SCRIPT="$DIR/custom-prompt-bash.sh"
 
 if [ -f "$SCRIPT" ]; then
-    # adds to .bashrc
-    # # setup custom prompt
-    # if [ -f "$SCRIPT" ]; then
-    #     source "$SCRIPT"
-    # fi
-    printf '\n%s\n%s\n%s\n%s\n' \
-        "# setup custom prompt" \
-        "if [ -f \"$SCRIPT\" ]; then" \
-        "    source \"$SCRIPT\"" \
-        'fi' \
-        >> "$HOME/.bashrc"
+  # adds to .bashrc
+  # # setup custom prompt
+  # if [ -f "$SCRIPT" ]; then
+  #     source "$SCRIPT"
+  # fi
+  printf '\n%s\n%s\n%s\n%s\n' \
+    "# setup custom prompt" \
+    "if [ -f \"$SCRIPT\" ]; then" \
+    "    source \"$SCRIPT\"" \
+    'fi' \
+    >>"$HOME/.bashrc"
 fi
