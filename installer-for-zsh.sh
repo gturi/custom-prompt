@@ -5,7 +5,8 @@ DIR="$(dirname "$(readlink -f "$0")")"
 
 cd "$DIR" || exit
 
-git clone https://github.com/gturi/get-git-branch-name.git
+./setup.sh
+
 /bin/bash "$DIR/get-git-branch-name/installer-for-zsh.sh"
 
 SCRIPT="$DIR/custom-prompt-zsh.sh"

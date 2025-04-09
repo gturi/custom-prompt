@@ -12,7 +12,7 @@ cd "$(dirname "$0")"
 
 git pull
 
-[ ! -d "get-git-branch-name" ] && git clone https://github.com/gturi/get-git-branch-name.git
+[ ! -d "get-git-branch-name" ] && ./setup.sh
 
 cd get-git-branch-name
 git pull
